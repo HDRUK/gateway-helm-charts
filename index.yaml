@@ -3,7 +3,7 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-04-14T13:54:37.388328+01:00"
+    created: "2023-04-14T14:31:27.790373+01:00"
     description: A Helm chart for Kubernetes
     digest: 7d6fe76b42ab1e60637b1be8a6913343892591323b4ba5adeb2e251896fd9ab1
     name: helm-chart-test
@@ -30,7 +30,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 1.7.0
-    created: "2023-04-14T13:54:37.398401+01:00"
+    created: "2023-04-14T14:31:27.79692+01:00"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: 60aa4aa33c6867bf961f9e715bf7246d57fc3ca3bfa2ea433c1768eb1670d963
@@ -50,4 +50,39 @@ entries:
     urls:
     - https://github.com/HDRUK/gateway-helm-charts/ingress-nginx.tgz
     version: 4.6.0
-generated: "2023-04-14T13:54:37.386359+01:00"
+  mysql:
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.0.32
+    created: "2023-04-14T14:31:27.804354+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MySQL is a fast, reliable, scalable, and easy to use open source
+      relational database system. Designed to handle mission-critical, heavy-load
+      production applications.
+    digest: 281da70d371d089bd15d97ea962030604f39280ddcfb2a355127ea2a2429b7bf
+    home: https://github.com/bitnami/charts/tree/main/bitnami/mysql
+    icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: mysql
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/mysql
+    - https://mysql.com
+    urls:
+    - https://github.com/HDRUK/gateway-helm-charts/mysql-9.7.1.tgz
+    version: 9.7.1
+generated: "2023-04-14T14:31:27.782311+01:00"
